@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - springanimals@localhost" uuid="50608a36-44aa-4e92-84fd-3b3600f9300b">
+      <secret-storage>master_key</secret-storage>
+      <introspection-scope>springanimals:public,pg_catalog,</introspection-scope>
+      <resolve-scope>springanimals:*</resolve-scope>
+    </data-source>
+  </component>
+</project>

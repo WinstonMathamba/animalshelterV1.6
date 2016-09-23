@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--/*@thymesVar id="bindingResult" type="org.springframework.validation.BindingResult"*/-->
+<!--/*@thymesVar id="animal" type="com.theironyard.entity.Animal"*/-->
+<head>
+    <title>Animal Shelter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"
+          href="../static/main.css" th:href="@{/static/main.css}"/>
+    <meta charset="utf-8" />
+</head>
+
+
+<body class="content">
+
+<form >
+<header>
+    <h1>Animal Shelter</h1>
+
+    <div class="two_columns">
+        <a th:href="@{HomePg.html}"> List Animals </a> | <a th:href="@{AddOrEdit.html}"> Add an Animal </a>
+    </div>
+
+    <h2 class="pageTitle">List Animals</h2>
+    <h4>Search for an animal: </h4>
+
+</header>
+
+<form>
+
+    <menu>
+        <input type="text" name="name" id="name" value="" placeholder="Name"/>
+
+        <select name="typeId">
+            <option>All Types</option>
+
+            <option> </option>
+
+        </select>
+
+        <input type="text" name="id" id="id" value="" placeholder="Id"/>
+
+        <button name="button">Search</button>
+    </menu>
+
+</form>
+
+
+<!-- main section of my page -->
+<section>
+    <!--/*@thymesVar id="animals" type="com.theironyard.entity.Animal"*/-->
+    <div class="row"  th:each = "animal:${animals}">
+        <img src="../images/dog_selfie.png"/>
+        <p>
+            <h2><a href=" "></a></h2>
+            <strong>Type:</strong> <span th:text = "${animal.type.getSpecies()}"></span>
+            <br/>
+            <strong>Breed:</strong> <span th:text = "${animal.breed}" ></span>
+            <br/>
+            <strong>Description:</strong> <span th:text = "${animal.description}"> </span>
+            <br/>
+            <strong>Notes:</strong> <a th:href="@{/NotePg.html}">...</a>
+            <br/>
+            <a th:href="@{/HomePg.html}"> <img src="../images/delete_trashcan.jpeg" style="width:50px; height: 50px;"/></a>
+        </p>
+
+    </div>
+</section>
+
+</form>
+</body>
+
+</html>
