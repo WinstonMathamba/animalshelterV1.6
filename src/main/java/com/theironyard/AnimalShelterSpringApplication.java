@@ -10,16 +10,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AnimalShelterSpringApplication {
 
-	@Autowired // example of dependency injection
-	private AnimalRepo animalRepo;
+    @Autowired // example of dependency injection
+    private AnimalRepo animalRepo;
 
-	@Autowired
-	private NoteRepo noteRepo;
+    @Autowired
+    private NoteRepo noteRepo;
 
-	@Autowired
-	private TypeRepo typeRepo;
+    @Autowired
+    private TypeRepo typeRepo;
 
-	public static void main(String[] args) {SpringApplication.run(AnimalShelterSpringApplication.class, args);}
+    public static void main(String[] args) {
+        SpringApplication.run(AnimalShelterSpringApplication.class, args);
+    }
 
 
 }

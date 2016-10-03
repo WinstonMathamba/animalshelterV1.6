@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1292308878">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="PostgreSQL - springanimals@localhost" uuid="50608a36-44aa-4e92-84fd-3b3600f9300b">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>

@@ -1,11 +1,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<!--<html lang="en">-->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Add / Edit an Animal</title>
     <link rel="stylesheet" type="text/css" media="all"
-          href="../static/addOrEdit.css" th:href="@{/static/addOrEdit.css}"/>
+          href="../static/css/addOrEdit.css" th:href="@{/static/css/addOrEdit.css}"/>
 </head>
 
 <body>
@@ -46,25 +46,25 @@
                 Description<sup>*</sup>:
             </label>
         </p>
-        <br><br><br><br><br><br>
+        <br/><br/><br/><br/><br/><br/>
         <p id="photo">Photo: </p>
     </section>
 
     <section id = "column2">
-        <input type="text" name="name" id="one" value=" ">
+        <input type="text" name="name" id="one" value=" " />
 
 
         <select id="two"> name = "select"> <option>Cat->Change Later</option> </select>
 
-        <input id="three" type="text" name="breed"  value="">
+        <input id="three" type="text" name="breed"  value="" />
 
         <textarea rows="9" name = "description" id="four" > </textarea>
 
-        <input type="hidden" name="id" id="five" value="">
-        <br>
+        <input type="hidden" name="id" id="five" value="" />
+        <br/>
 
-        <input for="browse" class="save" type="file">
-        <br>
+        <input for="browse" class="save" type="file" />
+        <br/>
         <button id="save" name="button">Save Animal</button>
     </section>
 
@@ -73,5 +73,3 @@
 </body>
 
 </html>
-
-

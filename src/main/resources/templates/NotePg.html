@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Animal Notes</title>
     <link rel="stylesheet" type="text/css" media="all"
-          href="../static/note.css" th:href="@{/static/note.css}"/>
+          href="../static/css/note.css" th:href="@{/static/css/note.css}"/>
 </head>
 
 <header>
@@ -20,7 +20,7 @@
 <section id="info">
     <p>
     <h2>Animal Notes</h2>
-    <img src="../images/dog_selfie.png">
+    <img src="../static/images/dog_selfie.png">
     <h2><a href="/addOrEditPg?id=${animal.getID()}">
     </a></h2>
     <strong>Type:</strong>
@@ -47,8 +47,8 @@
 
             </td>
             <td>
-                <a href=" "><img src="../images/delete_trashcan.jpeg"
-                                                                    style="width:20px; height: 20px;"></a>
+                <a href=" "><img src="../static/images/delete_trashcan.jpeg"
+                                 style="width:20px; height: 20px;"></a>
             </td>
         </tr>
 
@@ -62,7 +62,6 @@
         <textarea rows="8" name="note"></textarea><br>
         <button id="addNote" name="button">Add Note</button>
     </form>
-
 
 </section>
 
