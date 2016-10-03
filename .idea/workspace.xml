@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b75666-7a8d-472f-848d-4f07cc37617c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/delete_trashcan.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/dog_selfie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/addOrEdit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/note.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/images/delete_trashcan.jpeg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/delete_trashcan.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/images/dog_selfie.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/dog_selfie.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/static/addOrEdit.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/addOrEdit.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/static/main.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/static/note.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/note.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/AnimalShelterSpringApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/AnimalShelterSpringApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/controller/AnimalShelterController.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/controller/AnimalShelterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/repository/AnimalRepo.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/repository/AnimalRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/repository/NoteRepo.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/repository/NoteRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/repository/TypeRepo.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/repository/TypeRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/AnimalShelterSpringApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/AnimalShelterSpringApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/controller/AnimalShelterController.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/controller/AnimalShelterController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/AnimalRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/AnimalRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/NoteRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/NoteRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/TypeRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/repository/TypeRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/HomePg.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/HomePg.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/NotePg.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/NotePg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/AddOrEdit.html" afterPath="$PROJECT_DIR$/target/classes/templates/AddOrEdit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/HomePg.html" afterPath="$PROJECT_DIR$/target/classes/templates/HomePg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/NotePg.html" afterPath="$PROJECT_DIR$/target/classes/templates/NotePg.html" />
     </list>
     <ignored path="animalShelterSpring.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,26 +77,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AnimalShelterController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnimalShelterController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/controller/AnimalShelterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="495">
               <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="77" />
               <folding>
                 <element signature="e#2397#2398#0" expanded="true" />
                 <element signature="e#2423#2424#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimalType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/entity/AnimalType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#344#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotePg.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NotePg.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/NotePg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state relative-caret-position="169">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#1;n#table#0;n#section#1;n#html#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -183,8 +145,8 @@
       <file leaf-file-name="HomePg.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/HomePg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -205,8 +167,18 @@
       <file leaf-file-name="AddOrEdit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="67" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="67" />
+            <state relative-caret-position="480">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -249,15 +221,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/entity/Note.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/entity/AnimalType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/entity/Animal.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/HomePg.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/NotePg.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/repository/AnimalRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/repository/NoteRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/repository/TypeRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/AnimalShelterSpringApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/controller/AnimalShelterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/HomePg.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/NotePg.html" />
       </list>
     </option>
   </component>
@@ -1158,12 +1130,12 @@
       <workItem from="1474980964824" duration="2845000" />
       <workItem from="1475091097013" duration="1186000" />
       <workItem from="1475160218985" duration="601000" />
-      <workItem from="1475502748556" duration="4687000" />
+      <workItem from="1475502748556" duration="7853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85758000" />
+    <option name="totallyTimeSpent" value="88924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1247" height="809" extended-state="0" />
@@ -1177,7 +1149,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35434175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35434175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1523,14 +1495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1593,16 +1557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/NotePg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#1;n#table#0;n#section#1;n#html#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/repository/AnimalRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1619,18 +1573,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="67" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="67" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/HomePg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1639,11 +1593,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/controller/AnimalShelterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="495">
           <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="77" />
           <folding>
             <element signature="e#2397#2398#0" expanded="true" />
             <element signature="e#2423#2424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/AddOrEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/NotePg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#1;n#table#0;n#section#1;n#html#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
