@@ -1,11 +1,10 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:href="http://www.w3.org/1999/xhtml">
-<html lang="en">
 <!--/*@thymesVar id="animal" type="com.theironyard.entity.Animal"*/-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Animal Notes</title>
     <link rel="stylesheet" type="text/css" media="all"
-          href="../static/css/note.css" th:href="@{/static/css/note.css}"/>
+          href="../static/css/note.css" th:href="@{/css/note.css}"/>
 </head>
 
 <header>
@@ -20,22 +19,22 @@
 <section id="info">
     <p>
     <h2>Animal Notes</h2>
-    <img src="../static/images/dog_selfie.png">
+    <img th:src="@{images/dog_selfie.png}" src="../static/images/dog_selfie.png"/>
 
-    <h2><a th:href="/addOrEditPg?id=${animal.getID()}" href="AddOrEdit.html"> Doggy</a>
+    <h2><a th:text = "${animal.getAnimalName()}" href="AddOrEdit.html"> Doggy</a>
     </h2>
     <strong>Type:</strong>
-    <span>Parrot</span>
-    <br>
+    <span th:text = "${animal.type.getSpecies()}" >Parrot</span>
+    <br/>
     <strong>Breed:</strong>
-    <span>Silent Parrot</span>
-    <br>
+    <span th:text = "${animal.getBreed()}">Silent Parrot</span>
+    <br/>
     <strong>Description:</strong>
-    <span>Quiet</span>
+    <span th:text = "${animal.getDescription()}">Quiet</span>
     </p>
 </section>
-
-<section>
+<!--<div class="row"  th:each = "animal:${animals}">-->
+<section th:each="note:${animal.getNotes()}">
     <table>
         <tr>
             <th>Date</th>
@@ -44,15 +43,15 @@
         </tr>
 
         <tr>
-            <td>
+            <td th:text="${note.getDate()}">
                 11/22/00
             </td>
-            <td>
+            <td th:text="${note.getNoteText()}">
                 Dear Diary,
             </td>
             <td>
-                <a href=" "><img src="../static/images/delete_trashcan.jpeg"
-                                 style="width:20px; height: 20px;"></a>
+                <a href=" "><img th:src="@{images/delete_trashcan.jpeg}" src="../static/images/delete_trashcan.jpeg"
+                                 style="width:20px; height: 20px;"/></a>
             </td>
         </tr>
 
@@ -62,8 +61,8 @@
 <section>
     <form action="NotePg.html" method="post">
         <input type="hidden" name="id" value=" "/>
-        <label>Add a Note:</label><br>
-        <textarea rows="8" name="note"></textarea><br>
+        <label>Add a Note:</label><br/>
+        <textarea rows="8" name="note"></textarea><br/>
         <button id="addNote" name="button">Add Note</button>
     </form>
 

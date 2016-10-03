@@ -11,5 +11,7 @@ import org.springframework.stereotype.Repository;
 //Integer refers to the @ID in the entity
 @Repository
 public interface AnimalRepo extends JpaRepository<Animal, Long> {
+
+    Animal findOne(Long aLong);
     // List<Animal> findAll();
 }

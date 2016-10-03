@@ -18,7 +18,7 @@
     <h1>Animal Shelter</h1>
 
     <div class="two_columns">
-        <a th:href="@{HomePg.html}" href="HomePg.html"> List Animals </a> | <a th:href="@{AddOrEdit.html}" href="AddOrEdit.html"> Add an Animal </a>
+        <a th:href="@{/}" href="HomePg.html"> List Animals </a> | <a th:href="@{/AddOrEdit}" href="AddOrEdit.html"> Add an Animal </a>
     </div>
     <h2 class="pageTitle">List Animals</h2>
     <h4>Search for an animal: </h4>
@@ -30,10 +30,16 @@
     <menu>
         <input type="text" name="name" id="name" value="" placeholder="Name"/>
 
-        <select name="typeId">
-            <option>All Types</option>
+        <!--/*@thymesVar id="types" type="com.theironyard.entity.AnimalType"*/-->
+        <select th:field="*{types}" name="typeId">
 
-            <option> </option>
+            <option
+                    th:each="type:${types}"
+                    th:value="${type}"
+                    th:text="${type.getSpecies()}" >
+                All Types
+            </option>
+
 
         </select>
 
@@ -51,16 +57,16 @@
     <div class="row"  th:each = "animal:${animals}">
         <img th:src="@{images/dog_selfie.png}" src="../static/images/dog_selfie.png" />
         <p>
-            <h2><a href="AddOrEdit.html">Doggy</a></h2>
+            <h2><a href="AddOrEdit.html" th:href="@{/AddOrEdit(id=${animal.animalID})}" th:text="${animal.animalName}">Doggy</a></h2>
             <strong>Type:</strong> <span th:text = "${animal.type.getSpecies()}">Parrot</span>
             <br/>
             <strong>Breed:</strong> <span th:text = "${animal.breed}" >Silent Parrot</span>
             <br/>
             <strong>Description:</strong> <span th:text = "${animal.description}">Quiet</span>
             <br/>
-            <strong>Notes:</strong> <a th:href="@{/NotePg.html}" href="NotePg.html">5 Notes</a>
+            <strong>Notes:</strong> <a th:href="@{/Notes(id=${animal.animalID})}" href="NotePg.html">5 Notes</a>
             <br/>
-            <a th:href="@{/HomePg.html}" href="HomePg.html"> <img th:src="@{/images/delete_trashcan.jpeg}" src="../static/images/delete_trashcan.jpeg" style="width:50px; height: 50px;"/></a>
+            <a th:href="@{/DeleteAnimal(id=${animal.animalID})}" href="HomePg.html"> <img th:src="@{/images/delete_trashcan.jpeg}" src="../static/images/delete_trashcan.jpeg" style="width:50px; height: 50px;"/></a>
         </p>
 
     </div>
