@@ -59,14 +59,27 @@
 </section>
 
 <section>
-    <form action="NotePg.html" method="post">
-        <input type="hidden" name="id" value=" "/>
-        <label>Add a Note:</label><br/>
-        <textarea rows="8" name="note"></textarea><br/>
-        <button id="addNote" name="button">Add Note</button>
+
+    <form th:action="@{/Notes}" th:object="${note}" action="NotePg.html" method="post">
+        <menu>
+
+            <!--<input type="hidden" name = "noteID" value="" th:value ="*{noteID}"/>-->
+            <input type="hidden" name = "animalID" value = "" th:value ="${animal.animalID}"/>
+
+            <textarea name="text" id="text" th:text="${noteText}"></textarea>
+
+            <button name="button">Add</button>
+        </menu>
+
     </form>
 
 </section>
 
 </html>
 
+<!--<form action="NotePg.html" method="post">-->
+    <!--<input type="hidden" name="id" value=" "/>-->
+    <!--<label>Add a Note:</label><br/>-->
+    <!--<textarea rows="8" name="note"></textarea><br/>-->
+    <!--<button id="addNote" name="button">Add Note</button>-->
+<!--</form>-->

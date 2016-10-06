@@ -16,9 +16,28 @@ public class Note {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long noteID;
 
+    private Long animalID;
+
     private String noteText;
 
     private Date date;
+
+    public Note() {
+    }
+
+    public Note(Long animalID, String noteText, Date date) {
+        this.animalID = animalID;
+        this.noteText = noteText;
+        this.date = date;
+    }
+
+    public Long getAnimalID() {
+        return animalID;
+    }
+
+    public void setAnimalID(Long animalID) {
+        this.animalID = animalID;
+    }
 
     public Long getNoteID() {
         return noteID;

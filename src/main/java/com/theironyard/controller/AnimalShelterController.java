@@ -2,6 +2,7 @@ package com.theironyard.controller;
 
 import com.theironyard.entity.Animal;
 import com.theironyard.entity.AnimalType;
+import com.theironyard.entity.Note;
 import com.theironyard.entity.Search;
 import com.theironyard.repository.AnimalRepo;
 import com.theironyard.repository.NoteRepo;
@@ -25,7 +26,8 @@ import java.util.List;
 //@RequestMapping("/")
 public class AnimalShelterController {
 
-    @Autowired // we are NOT creating an instance of the AnimalRepo interface - just grabbing an instance thanks to Spring
+    @Autowired
+    // we are NOT creating an instance of the AnimalRepo interface - just grabbing an instance thanks to Spring
     private AnimalRepo animalRepo;
 
     @Autowired
@@ -37,14 +39,37 @@ public class AnimalShelterController {
     @Autowired
     private AnimalService animalService;
 
+
+//    home method: <- receives search as an argument
+//
+//    declare that we have a list of animals
+//
+//    did someone search for something?
+//            if so:
+//    run search and set into the list of animals
+//        if not:
+//    get all animals and set into the list of animals
+//
+//
+//    add the list of animals to the model
+
+
     // path refers to the URL path | method refers to HTML method
     @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String showAnimals(Model model, Search search, String action){ // this method "showAnimals()" responds to HTTP GET requests
+    public String showAnimals(Model model, Search search) { // this method "showAnimals()" responds to HTTP GET requests
 
-        List<Animal> allAnimals = animalRepo.findAll();
+        List<Animal> animalList = null;
+
+        if ((search.getName() != null) || (search.getTypeId() != null)) {
+            animalList = animalRepo.findByAnimalNameContainsIgnoreCase(search.getName());
+        } else {
+            animalList = animalRepo.findAll();
+        }
+        model.addAttribute("animals", animalList);
+
         List<AnimalType> types = typeRepo.findAll();
         // put the animal into the model
-        model.addAttribute("animals", allAnimals);
+        // model.addAttribute("animals", allAnimals);
         model.addAttribute("types", types);
         //NOTE: the Model class is part of Spring MVC that holds your model data and passes that to your view
         // this is similar to how we can set attributes on an HttpServletRequest in Servlets
@@ -85,20 +110,29 @@ public class AnimalShelterController {
 //    }
 
 
-    @RequestMapping (path = "/AddOrEdit", method = RequestMethod.GET)
+    @RequestMapping(path = "/AddOrEdit", method = RequestMethod.GET)
     public String addEditAnimal(Model model) {
         return "AddOrEdit";
     }
 
-    @RequestMapping (path = "/DeleteAnimal", method = RequestMethod.GET)
+    @RequestMapping(path = "/DeleteAnimal", method = RequestMethod.GET)
     public String deleteAnimal(Model model) {
         return "redirect:/";
     } // front slash is web root
 
-    @RequestMapping (path = "/Notes", method = RequestMethod.GET)
+    @RequestMapping(path = "/Notes", method = RequestMethod.GET)
     public String notes(Model model, Long id) {
         Animal animal = animalRepo.findOne(id);
         model.addAttribute("animal", animal);
         return "NotePg";
+    }
+
+    @RequestMapping(path = "/Notes", method = RequestMethod.POST)
+    public String addEditNote(String noteText) {
+        Note newNote = new Note();
+        newNote.setNoteText(noteText);
+        noteRepo.save(newNote);
+
+        return "redirect:/Notes";
     } // front slash is web root
 }

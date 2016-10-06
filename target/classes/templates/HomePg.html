@@ -13,7 +13,6 @@
 
 <body class="content">
 
-<form>
     <header>
         <h1>Animal Shelter</h1>
 
@@ -29,16 +28,6 @@
     <form th:action="@{/}" th:object="${search}" action="HomePg.html" method="get">
         <menu>
             <input th:field="*{name}" type="text" name="name" id="name" value="" placeholder="Name"/>
-
-            <!--/*@thymesVar id="types" type="com.theironyard.entity.AnimalType"*/-->
-            <select name="typeId">
-                <option
-                        th:each="type: ${types}"
-                        th:value="${type.getTypeID()}"
-                        th:text="${type.getSpecies()}"> All Types
-                </option>
-
-            </select>
 
             <button name="button">Search</button>
         </menu>
@@ -60,7 +49,7 @@
             <br/>
             <strong>Description:</strong> <span th:text="${animal.description}">Quiet</span>
             <br/>
-            <strong>Notes:</strong> <a th:href="@{/Notes(id=${animal.animalID})}" href="NotePg.html">5 Notes</a>
+            <strong>Notes:</strong> <a th:href="@{/Notes(id=${animal.animalID})}" th:text="${animal.getNotes().size()}" href="NotePg.html">5 Notes</a>
             <br/>
             <a th:href="@{/DeleteAnimal(id=${animal.animalID})}" href="HomePg.html"> <img
                     th:src="@{/images/delete_trashcan.jpeg}" src="../static/images/delete_trashcan.jpeg"
@@ -70,7 +59,6 @@
         </div>
     </section>
 
-</form>
 </body>
 
 </html>

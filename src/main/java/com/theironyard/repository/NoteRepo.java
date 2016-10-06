@@ -12,4 +12,6 @@ import org.springframework.stereotype.Repository;
 public interface NoteRepo extends JpaRepository <Note, Long> {
 
     List<Note> findAll();
+
+
 }
