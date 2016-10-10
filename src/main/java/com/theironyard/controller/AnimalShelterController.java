@@ -135,4 +135,12 @@ public class AnimalShelterController {
 
         return "redirect:/Notes?id=" + note.getAnimalID();
     } // front slash is web root
+
+    @RequestMapping(path = "/deleteNote", method = RequestMethod.GET)
+    public String deleteNote(Long noteID, Long animalID) {
+//
+       noteRepo.delete(noteID);
+
+        return "redirect:/Notes?id=" + animalID ;
+    } // front slash is web root
 }

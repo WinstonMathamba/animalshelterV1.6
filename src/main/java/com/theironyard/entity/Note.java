@@ -5,7 +5,7 @@ package com.theironyard.entity;
  */
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 
 @Entity
@@ -20,7 +20,7 @@ public class Note {
 
     private String noteText;
 
-    private Date date;
+    private Date date = new Date();
 
     public Note() {
     }
