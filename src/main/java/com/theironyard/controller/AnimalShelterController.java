@@ -128,11 +128,11 @@ public class AnimalShelterController {
     }
 
     @RequestMapping(path = "/Notes", method = RequestMethod.POST)
-    public String addEditNote(String noteText) {
-        Note newNote = new Note();
-        newNote.setNoteText(noteText);
-        noteRepo.save(newNote);
+    public String addEditNote(Note note) {
+//        Note newNote = new Note();
+//        newNote.setNoteText(noteText);
+        noteRepo.save(note);
 
-        return "redirect:/Notes";
+        return "redirect:/Notes?id=" + note.getAnimalID();
     } // front slash is web root
 }
